@@ -1795,7 +1795,107 @@ ul.features-list-hero li i.blue{
 }
 
 /* ========================================================== */
-/* 			             12. MEDIA QUERIES                    */
+/* 			             12. GLOBAL CLASES                        */
+/* ========================================================== */
+
+.start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.astart {
+  display: flex;
+  align-items: flex-start;
+}
+.jstart {
+  display: flex;
+  justify-content: flex-start;
+}
+.tstart {text-align: start}
+.end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.aend {
+  display: flex;
+  align-items: flex-end;
+}
+.jend {
+  display: flex;
+  justify-content: flex-end;
+}
+.tend {text-align: end}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acenter {
+  display: flex;
+  align-items: center;
+}
+.jcenter {
+  display: flex;
+  justify-content: center;
+}
+.tcenter {text-align: center}
+.space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tspace {text-align: justify}
+.jspace {
+  display: flex;
+  justify-content: space-between;
+}
+.spacea {
+  display: flex;
+  justify-content: space-around;
+}
+.spacee {
+  display: flex;
+  justify-content: space-evenly;
+}
+.relative {position: relative}
+.centera {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.divrow {
+  display: flex;
+  flex-direction: row;
+}
+.divrow_inv {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.divcol {
+  display: flex;
+  flex-direction: column;
+}
+.divcol_inv {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.wrap {
+  --fb: initial;
+  display: flex;
+  flex-wrap: wrap;
+  & > * {flex-basis: var(--fb) !important}
+}
+.bold{
+  font-weight: 700;
+}
+
+/* ========================================================== */
+/* 			             13. MEDIA QUERIES                    */
 /* ========================================================== */
 @media (max-width: 1200px) {
 	.navbar-brand{
