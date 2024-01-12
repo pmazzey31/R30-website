@@ -446,7 +446,7 @@ iframe {
 .navbar-fixed-top.opaque {
 	position: fixed!important;
 	background-color: #fff!important;
-	border-bottom: 1px solid #eee;
+	border-bottom: 2px solid #eee;
 	padding: 20px 0;
 	transition: all 0.25s ease-in-out 0s;
 }
@@ -1948,7 +1948,16 @@ ul.features-list-hero li i.blue{
 	.navbar-default .navbar-toggle .icon-bar {
 	    background-color: #9f9f9f!important;
 	}
+
+	select#languages{
+		color: #454545 !important;
+		padding: 10px 20px!important;
+	}
 	
+	select:focus {
+		color: #f0f0f0;
+		border: black;
+	 }
 
 }
 
@@ -1982,6 +1991,8 @@ ul.features-list-hero li i.blue{
 	    margin-bottom: 0;
 	    border: 1px solid #9f9f9f!important;
 		position: fixed;
+		left: auto;
+        right: 0;
 	}
 
 	.navbar-default .navbar-toggle {
