@@ -518,13 +518,18 @@ select#languages{
 	background: none;
 	color: white;
 	border: none;
-	color:#fff !important;
+	color:#fff;
 	font-size: 14px !important;
 	line-height: 30px !important;
 	text-transform: uppercase;
 	padding: 10px 0px 10px 0px!important;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
+}
+
+.languagesblack{
+	color: #454545 !important;
+	padding: 10px 20px!important;
 }
 
 select > option {
@@ -1953,6 +1958,7 @@ ul.features-list-hero li i.blue{
 		color: #454545 !important;
 		padding: 10px 20px!important;
 	}
+	
 	
 	select:focus {
 		color: #f0f0f0;

@@ -52,11 +52,19 @@ $(window).on('load', function(){
 	/*   Navigation Background Color                              */
 	/* ========================================================== */
 	
-	$(window).on('scroll', function() {
-		if($(this).scrollTop() > 450) {
+	$(window).on('scroll resize', function() {
+		if ($(window).width() <= 991) {
+			// Para pantallas más pequeñas o iguales a 991px, siempre añadir la clase "opaque"
 			$('.navbar-fixed-top').addClass('opaque');
 		} else {
-			$('.navbar-fixed-top').removeClass('opaque');
+			// Para pantallas más grandes que 991px, añadir o quitar la clase "opaque" según la posición de desplazamiento
+			if ($(this).scrollTop() > 450) {
+				$('.navbar-fixed-top').addClass('opaque');
+				$('.languages').addClass('languagesblack');
+			} else {
+				$('.navbar-fixed-top').removeClass('opaque');
+				$('.languages').removeClass('languagesblack');
+			}
 		}
 	});
  
