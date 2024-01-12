@@ -1965,8 +1965,17 @@ ul.features-list-hero li i.blue{
 		border: black;
 	 }
 
-	 .fun-facts-box{
+	.fun-facts-box{
 		width:48%!important;
+	}
+
+	.fun-facts-title{
+		font-size:14px;
+	}
+	
+	.fun-facts-title span{
+		font-size:30px;
+		line-height:30px;
 	}
 
 }
