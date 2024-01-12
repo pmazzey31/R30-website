@@ -1723,7 +1723,7 @@ input#email_newsletter:-ms-input-placeholder { /* Internet Explorer 10+ */
 .fun-facts-box{
 	display: inline-block;
 	width:19%;
-	padding:10px;
+	padding:10px 20px;
 }
 
 .fun-facts-title{
@@ -1964,6 +1964,10 @@ ul.features-list-hero li i.blue{
 		color: #f0f0f0;
 		border: black;
 	 }
+
+	 .fun-facts-box{
+		width:48%!important;
+	}
 
 }
 
