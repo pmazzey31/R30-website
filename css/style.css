@@ -514,6 +514,33 @@ iframe {
     color: #fff!important;
 }
 
+select#languages{
+	background: none;
+	color: white;
+	border: none;
+	color:#fff !important;
+	font-size: 14px !important;
+	line-height: 30px !important;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 0px!important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+}
+
+select > option {
+	background: white !important;
+	color: #454545 !important;
+}
+
+select:hover{
+	cursor: pointer;
+}
+
+select:focus{
+	text-decoration: none;
+	outline: 0;
+}
+
 /* ========================================================== */
 /* 			                03. FOOTER                        */
 /* ========================================================== */
@@ -1897,11 +1924,6 @@ ul.features-list-hero li i.blue{
 /* ========================================================== */
 /* 			             13. MEDIA QUERIES                    */
 /* ========================================================== */
-@media (max-width: 1200px) {
-	.navbar-brand{
-		padding-top: 50px;
-	}
-}
 
 
 @media (max-width: 991px) {
@@ -1921,10 +1943,12 @@ ul.features-list-hero li i.blue{
 	.navbar-default .navbar-toggle {
 	    border-color: #9f9f9f!important;
 	}
+	
 
 	.navbar-default .navbar-toggle .icon-bar {
 	    background-color: #9f9f9f!important;
 	}
+	
 
 }
 
@@ -1957,6 +1981,7 @@ ul.features-list-hero li i.blue{
 	.navbar-toggle {
 	    margin-bottom: 0;
 	    border: 1px solid #9f9f9f!important;
+		position: fixed;
 	}
 
 	.navbar-default .navbar-toggle {
